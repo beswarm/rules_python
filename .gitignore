@@ -30,6 +30,8 @@
 
 # Emacs garbage
 *~
+# intelij-plugin directory
+.ijwb/**
 
 # Bazel directories
 bazel-*

@@ -18,6 +18,10 @@ load(
     "@examples_version//:requirements.bzl",
     _version_install = "pip_install",
 )
+load(
+    "@examples_gm//:requirements.bzl",
+    _gm_install = "pip_install",
+)
 
 # Requirements for building our piptool.
 load(
@@ -36,3 +40,4 @@ def rules_python_internal_setup():
     _version_install()
     _boto_install()
     _extras_install()
+    _gm_install()

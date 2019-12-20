@@ -48,3 +48,8 @@ def examples():
         name = "examples_extras",
         requirements = "@rules_python//examples/extras:requirements.txt",
     )
+
+    pip_import(
+        name = "examples_gm",
+        requirements = "@rules_python//examples/gm:requirements.txt",
+    )
